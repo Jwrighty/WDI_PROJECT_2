@@ -1,1 +1,3 @@
-console.log('client log!');
+$(document).ready(function() {
+  $('select').material_select();
+});

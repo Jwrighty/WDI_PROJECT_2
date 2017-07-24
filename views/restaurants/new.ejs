@@ -1,0 +1,40 @@
+<h1>Eaten somewhere great? Give a Shout Out!</h1>
+
+<div class="row">
+  <form method="POST" action="/restaurants" class="col s12">
+    <div class="row">
+      <div class="input-field col s12">
+        <i class="material-icons prefix">store</i>
+        <input name="name" id="name" type="text" class="validate">
+        <label for="name">Restaurant Name</label>
+      </div>
+      <div class="input-field col s12">
+        <i class="material-icons prefix">add_a_photo</i>
+        <input name="images" id="images" type="tel" class="validate">
+        <label for="images">Add a photo</label>
+      </div>
+      <div class="input-field col s12">
+        <i class="material-icons prefix">location_searching</i>
+        <select>
+          <option name="location" id="location" value="" disabled selected>Which area?</option>
+          <option name="location" id="location" value="1">Central</option>
+          <option name="location" id="location" value="2">North</option>
+          <option name="location" id="location" value="3">East</option>
+          <option name="location" id="location" value="4">South</option>
+          <option name="location" id="location" value="5">West</option>
+        </select>
+        <label for="location">Materialize Select</label>
+      </div>
+      <div class="input-field col s12">
+        <i class="material-icons prefix">restaurant</i>
+        <input name="cuisine" id="cuisine" type="text" class="validate">
+        <label for="cuisine">Cuisine</label>
+      </div>
+    </div>
+
+    <button class="btn waves-effect waves-light" type="submit" name="action">Shout Out!
+  <i class="material-icons right">record_voice_over</i>
+</button>
+    <%# <a class="waves-effect waves-light btn"><i class="material-icons right">record_voice_over</i>Shout Out!</a>%>
+  </form>
+</div>

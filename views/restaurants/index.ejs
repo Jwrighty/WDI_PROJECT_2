@@ -1,0 +1,24 @@
+<h1>Restaurants</h1>
+<%# have map generating%>
+
+<%# Carousel %>
+
+
+<div class="row">
+  <% restaurants.forEach((restaurant) => { %>
+    <div class="col s4">
+      <div class="card">
+      <a href="/restaurants/<%= restaurant.id %>">
+        <div class="card-image">
+          <img src="<%= restaurant.images[0] %>">
+        <span class="card-title"><%= restaurant.name %></span>
+        </div>
+        </a>
+        <div class="card-content">
+          <h5><%= restaurant.location %></h5>
+          <p><%= restaurant.cuisine %></p>
+        </div>
+      </div>
+    </div>
+  <% }) %>
+</div>
