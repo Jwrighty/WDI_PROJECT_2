@@ -4,21 +4,20 @@
 
 <%# Carousel %>
 
-counter of shoutouts can be the length of the images array
+<%# counter of shoutouts can be the length of the images array%>
+<div class="row">
+<div class="col s6">
+  <div class="carousel carousel-slider">
+    <a class="carousel-item" href="#one!"><img src="<%= restaurant.images %>"></a>
+  </div>
+</div>
+<div class="col s6">
+  <h4><%= restaurant.location %></h4>
+  <h4><%= restaurant.cuisine %></h4>
+  <h4><%= restaurant.createdBy.username %></h4>
 
-
-
-<img src="<%= restaurant.images[i] %>">
-
-<div class="carousel carousel-slider">
-
-
-
-
-  <a class="carousel-item"><img src="https://lorempixel.com/800/400/food/1"></a>
-  <a class="carousel-item" href="#two!"><img src="https://lorempixel.com/800/400/food/2"></a>
-  <a class="carousel-item" href="#three!"><img src="https://lorempixel.com/800/400/food/3"></a>
-  <a class="carousel-item" href="#four!"><img src="https://lorempixel.com/800/400/food/4"></a>
+  <%# Other info from google%>
+</div>
 
 
 </div>

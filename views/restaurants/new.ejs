@@ -1,7 +1,8 @@
+<%# AIzaSyBIgaOFi99JK5r-OYBsBhrfKeyq4d8Wulg %>
 <h1>Eaten somewhere great? Give a Shout Out!</h1>
 
 <div class="row">
-  <form method="POST" action="/restaurants" class="col s12">
+  <form method="POST" action="/restaurants" class="col s12 shout-out-form">
     <div class="row">
       <div class="input-field col s12">
         <i class="material-icons prefix">store</i>
@@ -10,21 +11,23 @@
       </div>
       <div class="input-field col s12">
         <i class="material-icons prefix">add_a_photo</i>
-        <input name="images" id="images" type="tel" class="validate">
+        <input name="images" id="images" type="tel" class="validate shout-out-photo">
         <label for="images">Add a photo</label>
       </div>
+
       <div class="input-field col s12">
         <i class="material-icons prefix">location_searching</i>
-        <select>
+        <select name="location" id="location">
           <option name="location" id="location" value="" disabled selected>Which area?</option>
-          <option name="location" id="location" value="1">Central</option>
-          <option name="location" id="location" value="2">North</option>
-          <option name="location" id="location" value="3">East</option>
-          <option name="location" id="location" value="4">South</option>
-          <option name="location" id="location" value="5">West</option>
+          <option name="location" id="location" value="Central">Central</option>
+          <option name="location" id="location" value="North">North</option>
+          <option name="location" id="location" value="East">East</option>
+          <option name="location" id="location" value="South">South</option>
+          <option name="location" id="location" value="West">West</option>
         </select>
-        <label for="location">Materialize Select</label>
+        <label for="location">Select Area</label>
       </div>
+
       <div class="input-field col s12">
         <i class="material-icons prefix">restaurant</i>
         <input name="cuisine" id="cuisine" type="text" class="validate">
@@ -32,7 +35,7 @@
       </div>
     </div>
 
-    <button class="btn waves-effect waves-light" type="submit" name="action">Shout Out!
+    <button class="btn waves-effect waves-light shout-btn" type="submit" name="action">Shout Out!
   <i class="material-icons right">record_voice_over</i>
 </button>
     <%# <a class="waves-effect waves-light btn"><i class="material-icons right">record_voice_over</i>Shout Out!</a>%>

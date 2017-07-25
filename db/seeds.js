@@ -33,14 +33,14 @@ User
         location: 'Central',
         cuisine: 'Argentinian',
         map: ''
-        // createdBy: 'test'
+        // createdBy:
       }, {
         name: 'Kanada-Ya',
         images: 'https://pbs.twimg.com/profile_images/697814475785793536/EZU83m1D.png',
         location: 'Central',
         cuisine: 'Japanese',
         map: ''
-        // createdBy: 'test'
+        // createdBy: 
       }]);
   })
   .then((restaurants) => {
