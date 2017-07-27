@@ -11,6 +11,7 @@ const User                  = require('./models/user');
 const session               = require('express-session');
 const flash                 = require('express-flash');
 const app                   = express();
+const cors                  = require('cors');
 
 mongoose.Promise = bluebird;
 mongoose.connect(db);
@@ -18,6 +19,7 @@ mongoose.connect(db);
 app.set('view engine', 'ejs');
 app.set('views', `${__dirname}/views`);
 
+app.use(cors());
 app.use(morgan('dev'));
 app.use(expressLayouts);
 app.use(express.static(`${__dirname}/public`));

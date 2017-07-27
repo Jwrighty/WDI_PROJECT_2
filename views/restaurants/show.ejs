@@ -1,23 +1,41 @@
 <%# also add the ability to shout out on restaurant page%>
 
-<h1><%= restaurant.name %></h1>
-
 <%# Carousel %>
-
 <%# counter of shoutouts can be the length of the images array%>
-<div class="row">
-<div class="col s6">
-  <div class="carousel carousel-slider">
-    <a class="carousel-item" href="#one!"><img src="<%= restaurant.images %>"></a>
+<div class="row red darken-4 show-box" id="restaurant-details" data-google-place-id="<%= restaurant.placeId %>">
+  <div class="col s12 m8">
+    <div class="carousel carousel-slider" data-indicators="true">
+      <% restaurant.images.forEach((image) => { %>
+        <img class="carousel-item" src="<%= image %>">
+        <% }) %>
+      </div>
+    </div>
+    <div class="col s12 m4">
+      <div class="card white">
+        <div class="card-content white-text">
+          <span class="card-title black-text rest-title"><%= restaurant.name %></span>
+
+
+          <div class="chip shoutout-info">
+            <img src="images/yuna.jpg" alt="Contact Person">
+            Shout Outs
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="google-data">
+      <p><i class="material-icons prefix">grade</i><span class="rating-info"></span></p>
+      <p><i class="material-icons">location_on</i><span class="address-info"></span></p>
+      <p><i class="material-icons prefix">public</i><span class="website-info"></span></p>
+      <p><i class="material-icons prefix">call</i><span class="phone-info"></span></p>
+      <p><span class="about-info"></span></p>
+    </div>
   </div>
 </div>
-<div class="col s6">
-  <h4><%= restaurant.location %></h4>
-  <h4><%= restaurant.cuisine %></h4>
-  <h4><%= restaurant.createdBy.username %></h4>
-
-  <%# Other info from google%>
 </div>
 
-
+</div>
+<div id="rest-map">
+</div>
+</div>
 </div>

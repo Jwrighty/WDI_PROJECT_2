@@ -1,43 +1,40 @@
 <%# AIzaSyBIgaOFi99JK5r-OYBsBhrfKeyq4d8Wulg %>
-<h1>Eaten somewhere great? Give a Shout Out!</h1>
 
-<div class="row">
+
+<div class="row row-new">
+  <h5>Eaten somewhere great? Give a Shout Out!</h5>
   <form method="POST" action="/restaurants" class="col s12 shout-out-form">
     <div class="row">
       <div class="input-field col s12">
         <i class="material-icons prefix">store</i>
-        <input name="name" id="name" type="text" class="validate">
-        <label for="name">Restaurant Name</label>
+        <input name="searchName" id="searchName" type="text" class="validate">
+        <label for="searchName"></label>
       </div>
       <div class="input-field col s12">
         <i class="material-icons prefix">add_a_photo</i>
         <input name="images" id="images" type="tel" class="validate shout-out-photo">
         <label for="images">Add a photo</label>
       </div>
-
       <div class="input-field col s12">
-        <i class="material-icons prefix">location_searching</i>
-        <select name="location" id="location">
-          <option name="location" id="location" value="" disabled selected>Which area?</option>
-          <option name="location" id="location" value="Central">Central</option>
-          <option name="location" id="location" value="North">North</option>
-          <option name="location" id="location" value="East">East</option>
-          <option name="location" id="location" value="South">South</option>
-          <option name="location" id="location" value="West">West</option>
-        </select>
-        <label for="location">Select Area</label>
+        <%# <i class="material-icons prefix">store</i>%>
+        <input name="name" id="name" type="hidden" class="validate">
+        <label for="name"></label>
       </div>
-
       <div class="input-field col s12">
-        <i class="material-icons prefix">restaurant</i>
-        <input name="cuisine" id="cuisine" type="text" class="validate">
-        <label for="cuisine">Cuisine</label>
+        <%# <i class="material-icons prefix">restaurant</i>%>
+        <input name="placeId" id="placeId" type="hidden" class="validate">
+        <label for="placeId"></label>
+      </div>
+      <div class="input-field col s12">
+        <%# <i class="material-icons prefix">restaurant</i>%>
+        <input name="latLng" id="latLng" type="hidden" class="validate">
+        <label for="latLng"></label>
       </div>
     </div>
-
-    <button class="btn waves-effect waves-light shout-btn" type="submit" name="action">Shout Out!
-  <i class="material-icons right">record_voice_over</i>
-</button>
-    <%# <a class="waves-effect waves-light btn"><i class="material-icons right">record_voice_over</i>Shout Out!</a>%>
+    <div class="row">
+    <button class="btn waves-effect waves-light red shout-btn btn-large col s6 offset-s3" type="submit" name="action">Shout Out!
+      <i class="material-icons right">record_voice_over</i>
+    </button>
+    </div>
   </form>
 </div>

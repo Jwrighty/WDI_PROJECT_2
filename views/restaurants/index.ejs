@@ -1,22 +1,16 @@
-<h1>Restaurants</h1>
-<%# have map generating%>
-
-<%# Carousel %>
-
+<%# <h4>Where are people shouting about?</h4>%>
 
 <div class="row">
   <% restaurants.forEach((restaurant) => { %>
-    <div class="col s4">
-      <div class="card">
+    <div class="col l4 m6 s12">
+      <div class="card hoverable restCard">
       <a href="/restaurants/<%= restaurant.id %>">
         <div class="card-image">
           <img src="<%= restaurant.images[0] %>">
-        <span class="card-title"><%= restaurant.name %></span>
         </div>
         </a>
         <div class="card-content">
-          <h5><%= restaurant.location %></h5>
-          <p><%= restaurant.cuisine %></p>
+          <h5><%= restaurant.name %></h5>
         </div>
       </div>
     </div>

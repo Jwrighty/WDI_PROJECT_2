@@ -1,3 +1,80 @@
 body {
 
 }
+
+.row-home, .row-new {
+  padding-top: 50px;
+  h5 {
+    text-align: center;
+  }
+}
+
+
+nav {
+  .brand-logo{
+    display: inline-block;
+    height: 100%;
+  }
+  .brand-logo>img {
+    vertical-align: middle
+  }
+  ul {
+    li a{
+      color: black;
+    }
+  }
+}
+
+#rest-map {
+  width: 100%;
+  height: 400px;
+  background-color: grey;
+}
+
+.main-card1 {
+  height: 300px;
+  width: 400px;
+  background-image: url('/images/Shout-out.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.main-card2 {
+  height: 300px;
+  width: 400px;
+  background-image: url('/images/Eat-out.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.restCard {
+
+}
+
+.show-box {
+  padding: 10px;
+}
+
+.google-data {
+  font-size: 14px;
+  color: white;
+  padding: 10px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-decoration: none;
+    .material-icons {
+      color: black;
+    }
+    a {
+      color: white;
+    }
+}
+
+.rest-title {
+  font-family: 'Raleway', sans-serif;
+}
+
+.shoutout-info {
+
+
+}

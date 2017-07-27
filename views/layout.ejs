@@ -4,32 +4,36 @@
   <meta charset="utf-8">
   <title>Project 2</title>
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:800|Raleway:800" rel="stylesheet">
   <script
   src="https://code.jquery.com/jquery-3.2.1.min.js"
   integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
   crossorigin="anonymous"></script>
-  <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBIgaOFi99JK5r-OYBsBhrfKeyq4d8Wulg&libraries=places"></script>
+
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.1/css/materialize.min.css">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.1/js/materialize.min.js"></script>
   <script src="/js/client.js" charset="utf-8"></script>
+  <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBIgaOFi99JK5r-OYBsBhrfKeyq4d8Wulg&libraries=places" async defer></script>
   <link rel="stylesheet" href="/css/style.css">
 </head>
 <body>
   <nav>
-    <div class="nav-wrapper" style="background: black">
-      <a href="/" class="brand-logo center">Shout Out | Eat Out</a>
-      <ul id="nav-mobile" class="right hide-on-med-and-down">
-        <li><a href="/restaurants/new">Shout Out</a></li>
+    <div class="nav-wrapper white">
+      <a href="/" class="brand-logo center"><img class"nav-logo" src="/images/Shout-Eat-Logo.png" alt=""></a>
+      <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+      <ul class="left hide-on-med-and-down">
+        <li class=""><a href="/restaurants/new">Shout Out</a></li>
         <li><a href="/restaurants">Eat Out</a></li>
         <% if (locals.isLoggedIn) { %>
           <li><a href="/logout">Logout</a></li>
           <% } else { %>
             <li><a href="/login">Login</a></li>
-            <li><a class="waves-effect waves-light btn" href="/register">Register</a></li>
+            <li><a href="/register">Register</a></li>
             <% } %>
           </ul>
         </div>
       </nav>
+
       <main class="container">
         <% for (const type in messages) { %>
           <p class="alert alert-<%= type %>"><%= messages[type] %></p>
