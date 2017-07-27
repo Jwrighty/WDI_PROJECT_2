@@ -1,23 +1,17 @@
-<%# also add the ability to shout out on restaurant page%>
-
-<%# Carousel %>
-<%# counter of shoutouts can be the length of the images array%>
-<div class="row red darken-4 show-box" id="restaurant-details" data-google-place-id="<%= restaurant.placeId %>">
+<div class="row show-box card" id="restaurant-details" data-google-place-id="<%= restaurant.placeId %>">
   <div class="col s12 m8">
-    <div class="carousel carousel-slider" data-indicators="true">
+    <div class="carousel carousel-slider black" data-indicators="true">
       <% restaurant.images.forEach((image) => { %>
-        <img class="carousel-item" src="<%= image %>">
+        <img class="carousel-item responsive-img" src="<%= image %>">
         <% }) %>
       </div>
     </div>
     <div class="col s12 m4">
       <div class="card white">
-        <div class="card-content white-text">
+        <div class="card-content white-text center">
           <span class="card-title black-text rest-title"><%= restaurant.name %></span>
-
-
-          <div class="chip shoutout-info">
-            <img src="images/yuna.jpg" alt="Contact Person">
+          <div class="chip shoutout-info center red">
+            <img src="" alt="Contact Person">
             Shout Outs
           </div>
         </div>
@@ -31,11 +25,5 @@
       <p><span class="about-info"></span></p>
     </div>
   </div>
-</div>
-</div>
-
-</div>
-<div id="rest-map">
-</div>
-</div>
-</div>
+  <div id="rest-map">
+  </div>

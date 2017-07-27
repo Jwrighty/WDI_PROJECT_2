@@ -1,16 +1,21 @@
-<%# <h4>Where are people shouting about?</h4>%>
+<h5>Map Search</h5>
+<div class="row">
+  <div id="index-map">
+  </div>
+</div>
 
+<h5>All Shout Outs</h5>
 <div class="row">
   <% restaurants.forEach((restaurant) => { %>
     <div class="col l4 m6 s12">
       <div class="card hoverable restCard">
       <a href="/restaurants/<%= restaurant.id %>">
         <div class="card-image">
-          <img src="<%= restaurant.images[0] %>">
+          <img class="index-img" data-latLng="<%= restaurant.latLng %> <%=restaurant.id %>" src="<%= restaurant.images[0] %>">
         </div>
         </a>
         <div class="card-content">
-          <h5><%= restaurant.name %></h5>
+          <p id="rest-name" data-name="<%= restaurant.name %>"><%= restaurant.name %></p>
         </div>
       </div>
     </div>

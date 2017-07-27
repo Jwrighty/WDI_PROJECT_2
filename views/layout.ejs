@@ -22,13 +22,13 @@
       <a href="/" class="brand-logo center"><img class"nav-logo" src="/images/Shout-Eat-Logo.png" alt=""></a>
       <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
       <ul class="left hide-on-med-and-down">
-        <li class=""><a href="/restaurants/new">Shout Out</a></li>
-        <li><a href="/restaurants">Eat Out</a></li>
+        <li class=""><a href="/restaurants/new"><b>Shout Out</b></a></li>
+        <li><a href="/restaurants"><b>Eat Out</b></a></li>
         <% if (locals.isLoggedIn) { %>
-          <li><a href="/logout">Logout</a></li>
+          <li><a href="/logout"><b>Logout</b></a></li>
           <% } else { %>
-            <li><a href="/login">Login</a></li>
-            <li><a href="/register">Register</a></li>
+            <li><a href="/login"><b>Login</b></a></li>
+            <li><a href="/register"><b>Register</b></a></li>
             <% } %>
           </ul>
         </div>
@@ -40,8 +40,5 @@
           <% } %>
           <%- body %>
         </main>
-
-
-
       </body>
       </html>
