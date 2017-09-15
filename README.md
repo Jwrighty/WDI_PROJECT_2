@@ -2,8 +2,8 @@
 
 Heroku: [https://floating-taiga-98107.herokuapp.com/]()
 
-#Skills
-HTML5, CSS3, JavaScript ES6, jQuery 3.10, Gulp, Yarn, Git, GitHub, MongoDB, Mongoose, Express.
+**Skills** : 
+HTML5, CSS3, JavaScript ES6, jQuery, Gulp, Yarn, Git, GitHub, MongoDB, Mongoose, Express, Google Maps & Place API, bcrypt.
 
 # Intro & Brief
 ![](https://i.imgur.com/hOTrWCy.jpg)
