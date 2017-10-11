@@ -47,6 +47,13 @@ nav {
   }
 }
 
+.intro {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.5em;
+  margin-top: 30px;
+  // color: grey;
+}
+
 #rest-map {
   width: 100%;
   height: 400px;
@@ -94,17 +101,30 @@ nav {
 
 .main-card2:hover #shoutout {
   color: firebrick;
+
 }
 
+#shoutout {
+    margin-left: -100px;
+}
+
+#eatout {
+  margin-left: 80px;
+}
 .homeHeaders {
   // font-family: 'Permanent Marker', cursive;
   // font-family: 'Luckiest Guy', cursive;
   // font-family: 'Bangers', cursive;
-  font-family: 'Rock Salt', cursive;
+  // font-family: 'Rock Salt', cursive;
   // font-family: 'Limelight', cursive;
+  // font-family: 'Bungee Inline', cursive;
+  font-family: 'Chau Philomene One', sans-serif;
+
+
   color: firebrick;
   font-size: 3.5em;
   margin-top: 0;
+  // margin-left: -100px;
 }
 
 .show-box {
