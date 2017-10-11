@@ -2,13 +2,24 @@ body {
 
 }
 
-.bg-img {
+.bg-img1 {
   min-width: 100%;
   min-height: 100%;
   position: fixed;
   top: 0;
   left: 0;
   z-index: -1;
+  background-color: rgba(255, 255, 255, 0.7);
+
+}
+.bg-img2 {
+  min-width: 100%;
+  min-height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -2;
+  background-color: #f3db02;
 }
 
 .row-home, .row-new {
@@ -51,18 +62,49 @@ nav {
 
 .main-card1 {
   height: 300px;
-  width: 400px;
-  background-image: url('/images/Shout-out.png');
+  // width: 400px;
+  background-image: url('/images/girl_greyscale.png');
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
+  background-position: center;
+}
+.main-card1:hover {
+  height: 300px;
+  // width: 400px;
+  background-image: url('/images/girl_color.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 
 .main-card2 {
   height: 300px;
-  width: 400px;
-  background-image: url('/images/Eat-out.png');
+  // width: 400px;
+  background-image: url('/images/boy_greyscale.png');
   background-repeat: no-repeat;
   background-size: cover;
+}
+.main-card2:hover {
+  height: 300px;
+  // width: 400px;
+  background-image: url('/images/boy_color.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.main-card2:hover #shoutout {
+  color: firebrick;
+}
+
+.homeHeaders {
+  // font-family: 'Permanent Marker', cursive;
+  // font-family: 'Luckiest Guy', cursive;
+  // font-family: 'Bangers', cursive;
+  font-family: 'Rock Salt', cursive;
+  // font-family: 'Limelight', cursive;
+  color: firebrick;
+  font-size: 3.5em;
+  margin-top: 0;
 }
 
 .show-box {

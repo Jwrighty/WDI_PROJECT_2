@@ -1,6 +1,6 @@
 # WDI - PROJECT - 2 - Shout Out Eat Out
 
-Heroku: [https://floating-taiga-98107.herokuapp.com/]()
+[Heroku](https://floating-taiga-98107.herokuapp.com/)
 
 **Skills** : 
 HTML5, CSS3, JavaScript ES6, jQuery, Gulp, Yarn, Git, GitHub, MongoDB, Mongoose, Express, Google Maps & Place API, bcrypt.
